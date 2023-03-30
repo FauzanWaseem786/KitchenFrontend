@@ -1,12 +1,5 @@
-import 'materialize-css/dist/css/materialize.min.css';;
-import M from  'materialize-css/dist/js/materialize.min.js';
 import React, { useState, useEffect } from 'react';
 import { Routes,Route } from "react-router-dom"
-import './App.css';
-import './loader.css';
-import './fav.css';
-import './fav.js';
-import './home.css';
 import  {Navbar}   from './Components/Navbar.js';
 import  {About}   from './Components/About.js';
 import  {Login}   from './Components/Login.js';
@@ -20,6 +13,13 @@ import  {Logout}   from './Components/Logout';
 import  {Forget}   from './Components/forgetpswd';
 import  {Reset}   from './Components/reset';
 import {disableReactDevTools} from '@fvilers/disable-react-devtools';
+import './App.css';
+import './loader.css';
+import './fav.css';
+import './fav.js';
+import './home.css';
+import 'materialize-css/dist/css/materialize.min.css';;
+import M from  'materialize-css/dist/js/materialize.min.js';
 
 
 if(process.env.NODE_ENV=='PRODUCTION') disableReactDevTools();

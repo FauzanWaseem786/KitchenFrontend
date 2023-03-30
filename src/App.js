@@ -19,8 +19,10 @@ import  {Post}   from './Components/Post.js';
 import  {Logout}   from './Components/Logout';
 import  {Forget}   from './Components/forgetpswd';
 import  {Reset}   from './Components/reset';
+import {disableReactDevTools} from '@fvilers/disable-react-devtools';
 
 
+if(process.env.NODE_ENV==='PRODUCTION') disableReactDevTools();
 function App() {
   useEffect(() => {
     // initializing the sidenav every time the page refreshes

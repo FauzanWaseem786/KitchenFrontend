@@ -1,0 +1,511 @@
+
+.brand-logo{
+  left:40%;
+}
+.Caption{
+  
+  box-sizing: content-box;
+  width: 100%;
+}
+.Cmntgrid{
+  box-sizing: content-box;
+  width: 100%;
+  display: inline-grid;
+  border-radius: 15px;
+  box-shadow:3px 3px rgb(9, 9, 9), -1em 0 .4em rgb(79, 79, 78);
+  grid-template-columns: auto ;
+}
+.Cmnt{
+  box-sizing: content-box;
+  border-bottom: 0.01px solid  rgb(110, 104, 104); 
+  height:40px;
+  text-decoration: none;
+  position: relative;
+  margin:0px;
+  border-bottom: 0px;
+}
+.Cmnt input:focus{
+  border: 0px;
+  box-shadow: 0px;
+}
+.Cmnt .circle{
+  margin : 4px;
+  width: 30px;
+  height: 30px;
+}
+.Cmnt span{
+  position: absolute;
+  bottom: 15%;
+}
+.Cmntbton{
+  padding-top: 5px;
+  position: relative;
+  height:30px;
+  box-sizing: content-box;
+  border-top:1px solid;
+  font-weight: bold;
+  cursor:pointer;
+}
+
+.dropdownn {
+  display:None;
+  height:100%;
+  float: right;
+  overflow: hidden;
+}
+.dropdownn .dropbtnn {
+  height:100%;
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.drp{
+    position:relative;
+    top:-10px;
+}
+.dropdown-contennt {
+  height:250px;
+  display: None;
+  position: absolute;
+  background-color: #000000;
+  min-width: 115px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right:0%;
+  top:100%
+}
+.dropdown-contennt li {
+  position: relative;
+  color: rgb(12, 12, 12);
+  height:20%;
+  text-align: left;
+}
+/*.dropdownn:hover .dropdown-contennt {
+  display: block;
+}*/
+
+.dropdown-contennt a {
+  font-family: inherit;
+  color: rgb(231, 222, 222);
+  text-align: left;
+}
+
+.frmContainer{
+  position: relative;
+  
+}
+
+
+.imgcontainer{
+  position: relative  ;
+}
+
+.imgrid{
+  /*box-sizing: content-box;*/
+  width: 100%;
+  height:400px;
+  grid-template-columns: auto;
+  display: grid;
+}
+
+.imgrid img{
+  object-fit: fill;
+  height:400px;
+  width: 100%;
+}
+i.lovecolor{
+  color: rgba(199, 16, 16);
+  background-color:rgba(214, 191, 191, 0.01);
+  cursor : pointer;
+}
+
+.leftImg{
+  background-color:rgba(214, 191, 191, 0.01);
+  z-index: 2;
+  position: absolute  ;
+  bottom: 5%;
+  right: 52%;
+  border: 0px;
+}
+.leftImg:focus{
+  outline: none;
+  background-color: transparent;
+}
+
+.Love{
+  background-color:rgba(214, 191, 191, 0.01);
+  z-index: 2;
+  position: absolute  ;
+  bottom: 10%;
+  right: 3%;
+  border: 0px;
+  padding: 0px;
+  height: 24px;
+  
+}
+/*:focus is when you click a button and its backround appears blue  so to remove it we use the foucs event here*/
+.Love:focus {
+  outline: none;
+  background-color: transparent;
+  
+}
+
+
+.Post{
+  border-radius: 15px 15px 15px 15px;
+  height:70%;
+  width : 45%;
+  box-shadow:  3px 3px rgb(9, 9, 9), -1em 0 .4em rgb(79, 79, 78);
+  margin:auto auto auto 20%;
+}
+
+.righttImg{
+  background-color:rgba(214, 191, 191, 0.01);
+  z-index: 2;
+  position: absolute  ;
+  bottom: 5%;
+  right: 45%;
+  border: 0px;
+}
+.righttImg:focus{
+  outline: none;
+  background-color: transparent;
+}
+
+.sort{
+  position: absolute;
+  right: 3%;
+  text-align: right;
+}
+
+.Title{
+  text-shadow: 1px 1px rgb(17, 17, 17);
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: content-box;
+  width: 100%;
+  text-align: left;
+  font-size: 30px;
+  height: 60px;
+  position: relative;/* giving a parent relative allows the child having absolute to be moved 
+  relative to its parent like the .Title span need to be moved here so giving Title relative*/
+}
+.Title span{
+  position: absolute;
+  bottom: 13%;
+  color: #000000;
+  font-size: 25px;
+  letter-spacing: 0px;
+}
+
+.Title .circle {
+  margin : 4px;
+  width: 50px;
+  height: 50px;
+  
+}
+
+
+
+@media screen and (max-width: 993px) {
+  .dropdownn{
+    display: block;
+  }
+}
+@media screen and (max-width: 450px) {
+  .Post{
+    width: 100%;
+    margin: 0px;
+  }
+ 
+  .grid-container{
+    width: 80%;
+    margin: 0px;
+    margin-left: 10%;
+    margin-top: 10%;
+    text-align: center;
+  }
+}
+/* for login form*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+::selection{
+  background: #4158d0;
+  color: #fff;
+}
+.wrapper{
+  width: 380px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+  position: absolute;
+  top:20%;
+  left: 35%;
+}
+.wrapper .title{
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  user-select: none;
+  border-radius: 15px 15px 0 0;
+  background: linear-gradient(-135deg, #2e142e, #3b487e);
+}
+.wrapper form{
+  padding: 10px 30px 50px 30px;
+}
+.wrapper form .field{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+.wrapper form .field input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  padding-left: 20px;
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+.wrapper form .field input:focus,
+form .field input:valid{
+  border-color: #4158d0;
+}
+.wrapper form .field label{
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: #999999;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+form .field input:focus ~ label,
+form .field input:valid ~ label{
+  top: 0%;
+  font-size: 16px;
+  color: #4158d0;
+  background: #fff;
+  transform: translateY(-50%);
+}
+form .content{
+  display: flex;
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  align-items: center;
+  justify-content: space-around;
+}
+form .content .checkbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form .content input{
+  width: 15px;
+  height: 15px;
+  background: red;
+}
+form .content label{
+  color: #7b5e5e;
+  user-select: none;
+  padding-left: 5px;
+}
+form .content .pass-link{
+  color: "";
+}
+form .field input[type="submit"]{
+  color: #fff;
+  border: none;
+  padding-left: 0;
+  margin-top: -10px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  background: linear-gradient(-135deg, #2e142e, #3b487e);
+  transition: all 0.3s ease;
+}
+form .field input[type="submit"]:active{
+  transform: scale(0.95);
+}
+form .signup-link{
+
+  color: #262626;
+  margin-top: 20px;
+  text-align: center;
+ 
+}
+form .pass-link a,
+form .signup-link a{
+  color: #3b487e;
+  text-decoration: none;
+}
+form .pass-link a:hover,
+form .signup-link a:hover{
+  text-decoration: underline;
+}
+
+
+/* for post form*/
+
+.pstfrm{
+  width: 100%;
+  height: 750px;
+  box-shadow:15px 15px 15px 15px grey;
+  position :relative;
+  padding:15px;
+}
+.postitle{
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  border-radius: 15px 15px 0 0;
+  background: linear-gradient(-135deg, #2e142e, #3b487e);
+}
+.caption{
+  position: absolute  ;
+  height: 10%;
+  width: 95%;
+  font-size: 17px;
+  padding: 20px;
+  margin:10px;
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+  outline :none;
+  transition: all 0.3s ease;
+}
+.caption label{
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: #999999;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  padding-left:20px;
+  transform: translateY(-50%);
+ 
+  transition: all 0.3s ease;
+}
+.caption input:focus ~label,
+.caption input:valid ~label{
+  top:10%;
+  font-size: 15px;
+  color: #4158d0;
+}
+
+.pics{
+  left: 2%;
+  top :30%;
+  width: 95%;
+  position: absolute;
+  
+  font-size:20px;
+}
+.pics input {
+  position:absolute;  
+   left: 50%;
+}
+
+.pics label{
+   position:absolute;
+   left:2%;
+   font-size: 17px;
+   transition: all  0.3s ease;
+}
+.pics input:focus ~label,
+.pics input:valid ~label{
+  
+  font-size: 25px;
+  color: #4158d0;
+}
+.postbtn
+{
+  position: absolute;
+  top:80%;
+  left:50%;
+  padding:10px;
+ 
+  margin-bottom: 30px;
+}
+.postbtn input{
+  background :linear-gradient(-135deg, #2e142e, #3b487e);
+  color: #fff;
+  height: 40px;
+  width:90px;
+  font-size: 23px;
+  font-weight: 600;
+  border-radius: 15px;
+  cursor:pointer ;
+  position: absolute;
+  left:45%;
+}
+
+.grid-container {
+  position :absolute;
+  
+  top: 50%;
+  text-align: center;
+  display: flex;
+  gap: 10px;
+  max-width: 95%;
+  height: auto;
+ 
+};
+.grid-item {
+  width: auto;
+  height: 200px;
+  border: #262626;
+}
+.grid-item img {
+  object-fit: fill; 
+  max-width: 100%;
+  height: 200px;
+
+}
+h4{
+  position: absolute;
+  top:40%;
+  left:3%;
+  color: #4158d0;
+}
+.signup{
+  position: absolute;
+  top: 90%;
+  left: 47%;
+  color: #262626;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.grid-container span {
+  font-size: 60px;
+  transform: translateX(13%);
+  color: #999999;
+  z-index: -1;}
+
+/*
+ 
+
+*/
+

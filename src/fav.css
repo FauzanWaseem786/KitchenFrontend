@@ -1,0 +1,353 @@
+.heart {
+    width: 100px;
+    height: 100px;
+    background: url("https://cssanimation.rocks/images/posts/steps/heart.png") no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    
+  }
+  
+ 
+.heart:active {
+  transform: scale(1.2);
+  background-color: red;
+}
+
+
+  .stage {
+    position: absolute;
+    top: 90%;
+    left: 93%;
+    transform: translate(-50%, -50%);
+  }
+
+
+
+
+
+
+
+
+
+
+/* for user profile */
+.card {
+  position: relative;
+  width: 50%;
+  height: 500px;
+  left: 20%;
+
+  color: #0f0f0f;
+  background: #131313;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.dp{
+  position:absolute;
+  left:25%;
+ 
+}
+
+
+.dp img{
+ 
+    max-width: 100%;
+    max-height: 100%;
+
+}
+.temporary_text {
+  font-weight: bold;
+  font-size: 24px;
+  padding: 6px 12px;
+  color: #f8f8f8;
+}
+
+.card_title {
+  font-weight: bold;
+}
+
+.card_content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+    /* edit the width to fit card */
+    width: 100%;
+    padding: 20px;
+    background: #f2f2f2;
+    border-top-left-radius: 20px;
+      /* edit here to change the height of the content box */
+    transform: translateY(150px);
+    transition: transform .25s;
+  }
+  
+  .card_content::before {
+    content: '';
+    position: absolute;
+    top: -47px;
+    right: -45px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-175deg);
+    border-radius: 50%;
+    box-shadow: inset 48px 48px #f2f2f2;
+  }
+  
+  .card_title {
+    color: #131313;
+    line-height: 15px;
+  }
+  
+  .card_subtitle {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  
+  .card_description {
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity .5s;
+  }
+  
+  .card:hover .card_content {
+    transform: translateY(0);
+  }
+  
+  .card:hover .card_description {
+    opacity: 1;
+    transition-delay: .25s;
+  }
+  
+  
+  /*     about page    */
+  .container {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    width: 600px;
+    height: 600px;
+  }
+  
+  .terminal_toolbar {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    padding: 0 8px;
+    box-sizing: border-box;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: #212121;
+    justify-content: space-between;
+  }
+  
+  .butt {
+    display: flex;
+    align-items: center;
+  }
+  
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-right: 5px;
+    font-size: 8px;
+    height: 12px;
+    width: 12px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 100%;
+    background: linear-gradient(#7d7871 0%, #595953 100%);
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 1px 0px #41403A, 0px 1px 1px 0px #474642;
+  }
+  
+  .btn-color {
+    background: #ee411a;
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+  }
+  
+  .btn:focus {
+    outline: none;
+  }
+  
+  .butt--exit {
+    background: linear-gradient(#f37458 0%, #de4c12 100%);
+  }
+  
+  .add_tab {
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0 6px;
+    border-radius: 4px 4px 0 0;
+    border-bottom: none;
+    cursor: pointer;
+  }
+  
+  .user {
+    color: #d5d0ce;
+    margin-left: 6px;
+    font-size: 14px;
+    line-height: 15px;
+  }
+  
+  .terminal_body {
+    background: rgb(10, 10, 10);
+    height: calc(100% - 30px);
+    padding-top: 2px;
+    margin-top: -1px;
+    font-size: 12px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+
+  
+  .terminal_user {
+    color: #1eff8e;
+  }
+  
+  .terminal_location {
+    color: #4878c0;
+  }
+  
+  .terminal_bling {
+    color: #dddddd;
+  }
+  
+  .terminal_promt span{
+    text-align: justify;
+  }
+  
+ .myinfo1 {
+  margin-left:20px;
+  position: relative;
+  color: white;
+  font-weight: bolder;
+  font-size: large;
+  display:inline-flex;
+  overflow: hidden; /* Hides the text until the animation starts */
+  animation: typing 3s steps(40) 1s 1 normal both;
+  white-space: nowrap; /* Prevents line breaks within each line of text */
+}
+.myinfo2  {
+  margin-left:5px;
+  position: relative;
+  color: white;
+  font-weight: bolder;
+  font-size: large;
+  display: inline-block; /* Makes each line of text appear on a separate line */
+  overflow: hidden; /* Hides the text until the animation starts */
+  animation: typing 3s steps(40) 3s 1 normal both;
+  white-space: nowrap; /* Prevents line breaks within each line of text */
+}
+.myinfo3  {
+  margin-left:5px;
+  position: relative;
+  color: white;
+  font-weight: bolder;
+  font-size: large;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  display: inline-block; /* Makes each line of text appear on a separate line */
+  overflow: hidden; /* Hides the text until the animation starts */
+  animation: typing 3s steps(40) 5s 1 normal both;
+  white-space: nowrap; /* Prevents line breaks within each line of text */
+}
+.myinfo4  {
+  margin-left:5px;
+  position: relative;
+  color: white;
+  font-weight: bolder;
+  font-size: large;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  display: inline-block; /* Makes each line of text appear on a separate line */
+  overflow: hidden; /* Hides the text until the animation starts */
+  animation: typing 3s steps(40) 7s 1 normal both;
+  white-space: nowrap; /* Prevents line breaks within each line of text */
+}
+.myinfo5  {
+  margin-left:5px;
+  position: relative;
+  color: white;
+  font-weight: bolder;
+  font-size: large;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  display: inline-block; /* Makes each line of text appear on a separate line */
+  overflow: hidden; /* Hides the text until the animation starts */
+  animation: typing 3s steps(40) 9s 1 normal both;
+  white-space: nowrap; /* Prevents line breaks within each line of text */
+}
+.myinfo6  {
+  margin-left:5px;
+  position: relative;
+  color: white;
+  font-weight: bolder;
+  font-size: large;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  display: inline-block; /* Makes each line of text appear on a separate line */
+  overflow: hidden; /* Hides the text until the animation starts */
+  animation: typing 3s steps(40) 11s 1 normal both;
+  white-space: nowrap; /* Prevents line breaks within each line of text */
+}
+.myinfo7  {
+  margin-left:5px;
+  position: relative;
+  color: white;
+  font-weight: bolder;
+  font-size: large;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  display: inline-block; /* Makes each line of text appear on a separate line */
+  overflow: hidden; /* Hides the text until the animation starts */
+  animation: typing 3s steps(40) 13s 1 normal both;
+  white-space: nowrap; /* Prevents line breaks within each line of text */
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+  @keyframes curbl {
+  
+    0% {
+      background: #ffffff;
+    }
+  
+    49% {
+      background: #ffffff;
+    }
+  
+    60% {
+      background: transparent;
+    }
+  
+    99% {
+      background: transparent;
+    }
+  
+    100% {
+      background: #ffffff;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

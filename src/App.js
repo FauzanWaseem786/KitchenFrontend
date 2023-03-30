@@ -22,7 +22,7 @@ import  {Reset}   from './Components/reset';
 import {disableReactDevTools} from '@fvilers/disable-react-devtools';
 
 
-if(process.env.NODE_ENV==='PRODUCTION') disableReactDevTools();
+if(process.env.NODE_ENV=='PRODUCTION') disableReactDevTools();
 function App() {
   useEffect(() => {
     // initializing the sidenav every time the page refreshes

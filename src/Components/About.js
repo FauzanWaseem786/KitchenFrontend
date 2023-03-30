@@ -5,14 +5,14 @@ export const About = () =>{
     
     
     return (
-      <div class="container">
+      <div class="contner">
       <div class="terminal_toolbar">
           <div class="butt">
-              <button class="btn btn-color"></button>
-              <button class="btn"></button>
-              <button class="btn"></button>
+              <button class="bton btn-color"></button>
+              <button class="bton"></button>
+              <button class="bton"></button>
           </div>
-          <p class="user">johndoe@admin: ~</p>
+          <p class="user">Fauzan: ~</p>
           
       </div>
       <div class="terminal_body">

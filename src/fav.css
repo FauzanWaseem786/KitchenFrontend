@@ -121,7 +121,7 @@
   
   
   /*     about page    */
-  .container {
+  .contner {
     position: absolute;
     top: 10%;
     left: 30%;
@@ -146,7 +146,7 @@
     align-items: center;
   }
   
-  .btn {
+  .bton {
     display: flex;
     justify-content: center;
     align-items: center;

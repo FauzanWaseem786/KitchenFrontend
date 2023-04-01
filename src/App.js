@@ -45,7 +45,7 @@ function App() {
         <Route exact path='/Setting' element={<Setting/>}/>
         <Route exact path='/Profile' element={<Profile/>}/>
         <Route exact path='/Postmaker' element={<Postmaker/>}/>
-        <Route exact path='/Explore' element={<Post/>}/>
+        <Route  path='/Explore' element={<Post/>}/>
         <Route exact path='https://kitchenf.onrender.com/Explore' element ={<Home/>} />
         <Route exact path='/Logout' element={<Logout/>}/>
         <Route exact path='/forgot-password' element={<Forget/>}/>

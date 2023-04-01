@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import { NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 export const Login = () =>{
     const [username,SetUsername] =useState("")
     const [password,SetPassword]=useState("")
     const [msg,SetMsg]=useState("")
+    const navigate=useNavigate(); 
 
     const handlePassword=(e)=>{
       SetPassword(e.target.value);
@@ -39,7 +41,8 @@ export const Login = () =>{
             SetMsg("")
             localStorage.setItem('token', token.token);
             localStorage.setItem('dp',token.dp)
-            window.location.replace('/Explore')
+           // navigate('/Explore')
+           window.location.replace('/Explore')
          }
          
 

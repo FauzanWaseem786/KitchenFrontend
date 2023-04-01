@@ -41,8 +41,7 @@ export const Login = () =>{
             SetMsg("")
             localStorage.setItem('token', token.token);
             localStorage.setItem('dp',token.dp)
-           // navigate('/Explore')
-           window.location.replace('/Explore')
+            navigate('/Explore')
          }
          
 

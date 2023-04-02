@@ -24,8 +24,8 @@ export const Postmaker = () =>{
             // token is valid and has not expired
           } catch (err) {
              console.log(err);
-             //navigate('/Login')
-             navigate('/Explore')
+             navigate('/Login')
+             
              
           }
     })

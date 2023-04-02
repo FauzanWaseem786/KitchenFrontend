@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 export const Login = () =>{
     const [username,SetUsername] =useState("")
     const [password,SetPassword]=useState("")
+    const [display,setDisplay]=useState(false)
     const [msg,SetMsg]=useState("")
     const navigate=useNavigate(); 
 
@@ -14,7 +15,9 @@ export const Login = () =>{
     const handleUsername=(e)=>{
       SetUsername(e.target.value);
     }
+   
     const handleSubmit=(e)=>{
+      setDisplay(true)
       e.preventDefault()
       fetch('https://kitchenb.onrender.com/Login', {
         method: 'POST',
@@ -22,6 +25,7 @@ export const Login = () =>{
         body: JSON.stringify({username:username,password:password})
       }).then(function(response) {
          if(response.status!= 200){
+            setDisplay(false);
             return(response.status)
          }
          else{
@@ -32,16 +36,20 @@ export const Login = () =>{
          if(token==500 || token ==401){
             if(token==500){
                SetMsg("Server Facins some issues Please try later ")
+               setDisplay(false);
             }
             else{
+               setDisplay(false);
                SetMsg("Incorrect Username/Password")
+
             }
          }
          else{
             SetMsg("")
+            setDisplay(false);
             localStorage.setItem('token', token.token);
             localStorage.setItem('dp',token.dp)
-            navigate('/Explore')
+            window.location.replace('/Explore')
          }
          
 
@@ -49,7 +57,9 @@ export const Login = () =>{
     }
 
     return (
+      
         <div class="wrapper">
+    {display &&  <div className="cover-spin" ></div>}
         <div class="title">
            Login Form
         </div>
@@ -73,13 +83,14 @@ export const Login = () =>{
               </div>
            </div>
            <div class="field">
-              <input type="submit" value="Login"/>
+              <input type="submit" value="Login" />
            </div>
            <div class="signup-link">
               Not a member? <NavLink to ="/Signup">Signin</NavLink>
            </div>
         </form>
      </div>
+    
          ) 
     
   }

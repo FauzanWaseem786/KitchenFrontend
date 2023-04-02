@@ -13,7 +13,7 @@ export const Signup = () =>{
    const [password,setPassword]=useState("");
    const [error,setError]=useState("");
    const [error1,setError1]=useState("");
-   
+   const [display,setDisplay]=useState(false)
     
    function emailValidation() {
       console.log('emailvalid')
@@ -43,7 +43,7 @@ export const Signup = () =>{
       });
    })
    };
-
+  
    const handleUsername = (e) =>{
       setUsername(e.target.value);
    }
@@ -62,6 +62,7 @@ export const Signup = () =>{
    }
    
    function  handleSave (e){
+      setDisplay(true)
       e.preventDefault();
       setError("");
       setError1("");
@@ -82,10 +83,11 @@ export const Signup = () =>{
             frm.append("file",dp)
             setError("");
             setError1("");
-            fetch('http://localhost:5000/Signup', {
+            fetch('https://kitchenb.onrender.com/Signup', {
             method: 'POST',
             body: frm
             }).then(function(response) {
+            setDisplay(false);
             console.log(response)
             alert('Signed in Successfully')
             window.location.replace('/Login')
@@ -93,10 +95,13 @@ export const Signup = () =>{
             });
           }
           else if(valUsr.check==2){
+            setDisplay(false);
             setError("The email already exists")
+            
             //alert('hey !! The email already exists')
           }
           else{
+            setDisplay(false);
             setError1("The username already exists")
             //alert('hey !! The username already exists')
           }
@@ -110,6 +115,7 @@ export const Signup = () =>{
     
    return (
         <div class="wrapper">
+         {display &&  <div className="cover-spin" ></div>}
         <div class="title">
            Signup!!!
         </div>
@@ -134,7 +140,7 @@ export const Signup = () =>{
            </div>
            
            <div class="field">
-              <input type="submit" value="Signup" />
+              <input type="submit" value="Signup"  />
            </div>
            
               

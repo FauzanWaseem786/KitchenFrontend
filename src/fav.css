@@ -37,7 +37,7 @@
   height: 500px;
   left: 20%;
 
-  color: #0f0f0f;
+  background-color: #0f0f0f !important;
   background: #131313;
   overflow: hidden;
   border-radius: 20px;

@@ -226,13 +226,33 @@ i.lovecolor{
 @media screen and (max-width: 450px) {
   .Post{
     width: 100%;
-    margin: 0px;
+    margin: 4px;
   }
  
   .pstfrm{
     width: 100%;
     margin: 0px;
   }
+}
+@media screen and (max-width: 900px) and (min-width: 700px) {
+  .Post{
+    position:relative;
+    left:20%;
+    width: 60%;
+    margin: 4px;
+  }
+ 
+ 
+}
+@media screen and (max-width: 700px) and (min-width: 450px) {
+  .Post{
+    position:relative;
+    left:15%;
+    width: 70%;
+    margin: 4px;
+  }
+ 
+ 
 }
 /* for login form*/
 
@@ -258,7 +278,7 @@ i.lovecolor{
   box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
   position: absolute;
   top:20%;
-  left: 35%;
+  left: 35vw;
 }
 .wrapper .title{
   font-size: 35px;
@@ -379,7 +399,6 @@ form .signup-link a:hover{
 .pstfrm{
   width: 100%;
   height: 750px;
-  box-shadow:15px 15px 15px 15px grey;
   position :relative;
   padding:15px;
 }
@@ -434,26 +453,26 @@ form .signup-link a:hover{
 }
 .pics input {
   position:absolute;  
-   left: 50%;
+   left: 20%;
+   display: block;
 }
 
 .pics label{
    position:absolute;
-   left:2%;
-   font-size: 17px;
+   font-size: 10px;
    transition: all  0.3s ease;
 }
 .pics input:focus ~label,
 .pics input:valid ~label{
   
-  font-size: 25px;
+  font-size: 10px;
   color: #4158d0;
 }
 .postbtn
 {
   position: absolute;
   top:80%;
-  left:50%;
+  left:25%;
   padding:10px;
  
   margin-bottom: 30px;
@@ -502,7 +521,7 @@ form .signup-link a:hover{
 .signup{
   position: absolute;
   top: 90%;
-  left: 47%;
+  left: 22vw;
   color: #262626;
   margin-top: 20px;
   text-align: center;
@@ -514,8 +533,61 @@ form .signup-link a:hover{
   color: #999999;
   z-index: -1;}
 
-/*
- 
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    nav-wrapper{
+      width:100vw;
+    }
+    
+    h1{
+      font-size: 3rem !important;
+    }
+   
+    .wrapper{
+      width: 80vw;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+      position: absolute;
+      top:20%;
+      left:10vw;
+    }
+  }
+  @media only screen and (max-width: 800px) and (min-width:601px) {
+    .w3-tables{
+      width: 45vw,   !important;;
+      height:60vh;
+    }
+    .wrapper{
+      width: 60vw;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+      position: absolute;
+      top:20%;
+      left:20%;
+    }
+  }
 
-*/
 
+  @media only screen and (max-width: 1000px) and (min-width:300px) {
+    .grid-container span {
+      font-size: 15px;
+      color: #999999;
+      z-index: -1;}
+    
+    .caption{
+    position: absolute;
+    height: 10%;
+    width: 80%;
+    font-size: 12px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+  }
+  
+  

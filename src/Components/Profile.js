@@ -32,13 +32,15 @@ export const Profile = (props) =>{
       {token &&  <article class="card" style={{ backgroundImage: `url('data:image/jpeg;base64,${user.dp}')`,
       backgroundSize : 'contain',
       backgroundRepeat: 'no-repeat',
+
       backgroundPosition: 'center',
       height: '70vh' }}>
-        <div class="temporary_text">
+        
+    <div class="card_content">
+    <div class="temporary_text">
            {user.username}
        
         </div>
-    <div class="card_content">
         <span class="card_title">{user.email}</span>
             <span class="card_subtitle">{user.username} joined us On {user.createdAt}</span>
             <p class="card_description">{user.about}</p>

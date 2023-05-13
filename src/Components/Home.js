@@ -8,9 +8,9 @@ export const Home = () =>{
 
 
 
-<header classNameName="w3-display-container w3-content w3-wide" style={{maxWidth:1600,minWidth:500}} id="home">
-  <img className="w3-image" src="images/home.jpg" alt="Hamburger Catering" style={{width:1600 ,height:800}}/>
-    <h1 className="textanimation"><i class="fa fa-cloud"></i>Kitchen</h1>
+<header classNameName="w3-display-container w3-content w3-wide"  id="home">
+  <img className="w3-image" src="images/home.jpg" alt="Hamburger Catering" />
+   {/* <h1 className="textanimation"><i class="fa fa-cloud"></i>Kitchen</h1>*/}
 
 </header>
 
@@ -19,7 +19,7 @@ export const Home = () =>{
 
   <div className="w3-row w3-padding-64" id="about">
     <div className="w3-col m6 w3-padding-large w3-hide-small">
-     <img src="https://www.w3schools.com/w3images/tablesetting2.jpg" className="w3-round w3-image w3-opacity-min" alt="Table Setting" style={{width:600 , height:750}}/>
+     <img src="https://www.w3schools.com/w3images/tablesetting2.jpg" className="w3-round w3-tables w3-opacity-min" alt="Table Setting" />
     </div>
 
     <div className="w3-col m6 w3-padding-large">
